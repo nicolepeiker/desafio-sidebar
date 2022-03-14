@@ -97,7 +97,7 @@ nav ul li a img {
   width: 222px;
   height: 60px;
   position: absolute;
-  bottom: 0;
+  bottom: 25px;
   left: 0;
   background: var(--light-green);
   padding: 7px 14px;
