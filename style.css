@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --body-bg-color: #dce4e3;
+  --green: #18c29c;
+  --light-green: #8ed7c6;
+  --light-grey: #dce4e3;
+  --text-color: #084236;
+}
+
+body {
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+}
+
+.content {
+  margin: 18px;
+  font-weight: 500;
+  font-size: 25px;
+  color: var(--text-color);
+}
+
+nav {
+  width: 250px;
+  height: 100vh;
+  background: var(--green);
+  padding-top: 26px;
+  position: relative;
+}
+
+nav.active {
+  width: 78px;
+}
+
+nav.active .menu {
+  position: relative;
+  left: -78px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li a {
+  list-style: none;
+  padding-bottom: 34px;
+  padding-left: 27px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font: 400 15px;
+  color: var(--text-color);
+  display: flex;
+}
+
+nav ul li a:hover:not(#busca, #vet) {
+  scale: 1.1;
+}
+
+#vet {
+  display: flex;
+  justify-content: space-between;
+}
+
+#busca {
+  padding: 0 14px 20px 14px;
+}
+
+input {
+  position: relative;
+  width: 100%;
+  height: 51px;
+  border-radius: 12px;
+  border: none;
+  background-color: var(--light-green);
+  padding-left: 50px;
+}
+
+#busca button {
+  position: absolute;
+  background: var(--light-green);
+  border: none;
+  padding-left: 13px;
+}
+
+nav ul li a img {
+  padding-right: 13px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 222px;
+  height: 60px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: var(--light-green);
+  padding: 7px 14px;
+}
+
+nav.active .container {
+  width: 50px;
+}
+
+nav.active #logout {
+  position: relative;
+  left: -98px;
+}
+
+nav.active .nome {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.user h3 {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.user p {
+  font-weight: 400;
+  font-size: 12px;
+}
+
+#photo {
+  width: 45px;
+  height: 45px;
+  border-radius: 12px;
+  object-fit: cover;
+}
